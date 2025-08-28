@@ -1,0 +1,52 @@
+.menu {
+    background-color: rgb(66, 66, 255);
+}
+button {
+    background-color: rgb(66, 66, 255);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: rgb(35, 35, 95);
+    color: rgb(157, 157, 233);
+}
+#biodata {
+    color: rgb(66, 66, 255);
+}
+#portofolio {
+    color: rgb(66, 66, 255);
+}
+.about {
+    background-color: lightblue;
+    width: 30%;
+    height: 90px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.right {
+    text-align: center;
+    width: 28%;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.center {
+    text-align: center;
+    width: 28%;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.left {
+    text-align: center;
+    width: 28%;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
