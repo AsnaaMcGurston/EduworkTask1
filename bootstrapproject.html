@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas Eduwork : Profil Biodata</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Asnaa McGurston</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#header">Header</a></li>
+          <li class="nav-item"><a class="nav-link" href="#biodata">Biodata</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portofolio">Portofolio</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section id="header" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h2 class="fw-bold">Welcome to<br>my personal website</h2>
+          <p>
+            Asnaa McGurston adalah seorang mahasiswa Universitas Terbuka dengan prodi Sistem Informasi 
+            yang memiliki kemampuan seni rupa yaitu melukis realisme, dan saat ini dia tengah mengembangkan 
+            skillnya di bidang design dan programming.
+          </p>
+          <button class="btn btn-primary">Pelajari Lebih Lanjut</button>
+        </div>
+        <div class="col-lg-5 text-center">
+          <img src="img/20250421_101008.jpg" class="rounded-circle img-fluid" alt="Foto Profil">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Biodata -->
+  <section id="biodata" class="py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold">About Me</h2>
+      <p class="mb-4">A brief introduction about myself</p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <strong>Full Name</strong><br>Neli Asnal Muna
+        </div>
+        <div class="col-md-4">
+          <strong>Education</strong><br>S1 Sistem Informasi
+        </div>
+        <div class="col-md-4">
+          <strong>Job</strong><br>Pelukis, Guru SMA
+        </div>
+        <div class="col-md-4">
+          <strong>Contact</strong><br>Instagram : @asnaa_m / @mcgurston.art
+        </div>
+        <div class="col-md-4">
+          <strong>Hobby</strong><br>Drawing, writing, designing
+        </div>
+        <div class="col-md-4">
+          <strong>Address</strong><br>Kendal, Jawa Tengah
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portofolio -->
+  <section id="portofolio" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-4">Portofolio</h2>
+      <div class="row g-4">
+        <div class="col-md-4 text-center">
+          <img src="img/Portfolio1.png" class="img-fluid rounded shadow" alt="Proyek 1">
+          <h5 class="mt-2">Proyek 1</h5>
+          <p>Merupakan proyek website yang menyertakan info pemesanan lukisan secara online dari platform resmi.</p>
+          <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal1">Detail</button>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="img/portfolio3.png" class="img-fluid rounded shadow" alt="Proyek 2">
+          <h5 class="mt-2">Proyek 2</h5>
+          <p>Merupakan proyek UX design tentang suatu website resmi milik saya sebagai seorang seniman.</p>
+          <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal2">Detail</button>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="img/Portfolio2.png" class="img-fluid rounded shadow" alt="Proyek 3">
+          <h5 class="mt-2">Proyek 3</h5>
+          <p>Merupakan proyek ucapan ulang tahun yang dibuat sebagai hadiah pribadi yang unik.</p>
+          <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal3">Detail</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal1" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header"><h5 class="modal-title">Proyek 1</h5></div>
+        <div class="modal-body">Detail lebih lengkap tentang Proyek 1.</div>
+        <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button></div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header"><h5 class="modal-title">Proyek 2</h5></div>
+        <div class="modal-body">Detail lebih lengkap tentang Proyek 2.</div>
+        <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button></div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal3" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header"><h5 class="modal-title">Proyek 3</h5></div>
+        <div class="modal-body">Detail lebih lengkap tentang Proyek 3.</div>
+        <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
