@@ -161,7 +161,85 @@
   </div>
 </div>
 
+<!-- Produk E-Commerce -->
+<section id="produk" class="py-5">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-4">Produk</h2>
+
+    <!-- Filter -->
+    <div class="text-center mb-4">
+      <label for="filter" class="fw-bold">Filter Kategori:</label>
+      <select id="filter" class="form-select w-auto d-inline-block">
+        <option value="All">Semua</option>
+        <option value="Website">Website</option>
+        <option value="Design">Design</option>
+      </select>
+    </div>
+
+    <!-- List Produk -->
+    <div class="row" id="product-list"></div>
+  </div>
+</section>
+
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS Produk -->
+  <script>
+    // 1. Array data produk
+    const products = [
+      {
+        name: "Website Pemesanan",
+        price: "Rp 500.000",
+        description: "Website pemesanan lukisan online dari platform resmi.",
+        image: "img/Portfolio1.png",
+        category: "Website"
+      },
+      {
+        name: "UX Design",
+        price: "Rp 300.000",
+        description: "UX Design website resmi milik saya sebagai seorang seniman.",
+        image: "img/portfolio3.png",
+        category: "Design"
+      },
+      {
+        name: "Website Ucapan",
+        price: "Rp 200.000",
+        description: "Proyek ucapan ulang tahun yang dibuat sebagai hadiah pribadi unik.",
+        image: "img/Portfolio2.png",
+        category: "Website"
+      }
+    ];
+
+    // 2. Render produk ke halaman
+    const productList = document.getElementById("product-list");
+
+    function renderProducts(filterCategory = "All") {
+      productList.innerHTML = ""; // reset isi
+      let filtered = filterCategory === "All" ? products : products.filter(p => p.category === filterCategory);
+
+      filtered.forEach((p) => {
+        productList.innerHTML += `
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100">
+              <img src="${p.image}" class="card-img-top" alt="${p.name}">
+              <div class="card-body">
+                <h5 class="card-title">${p.name}</h5>
+                <p class="card-text">${p.description}</p>
+                <p class="fw-bold text-primary">${p.price}</p>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+    }
+
+    // 3. Filter produk
+    document.getElementById("filter").addEventListener("change", function() {
+      renderProducts(this.value);
+    });
+
+    // Default tampil semua
+    renderProducts();
+  </script>
 </body>
 </html>
